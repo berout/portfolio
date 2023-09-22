@@ -32,15 +32,15 @@ function parallax(e){
     })
 };
 
-document.addEventListener("deviceorientation", parallax);
-function parallax(e){
-    this.querySelectorAll('.layer').forEach(layer =>{
-        const x = e.beta;
-        const y = e.gamma;
-        const z = e.alpha;
-        layer.style.transform = `translateX(-${x}px%) translateY(-${y}px%) translateZ(-${z}px%)`;
-    })
-};
+// document.addEventListener("deviceorientation", parallax);
+// function parallax(e){
+//     this.querySelectorAll('.layer').forEach(layer =>{
+//         const x = e.beta;
+//         const y = e.gamma;
+//         const z = e.alpha;
+//         layer.style.transform = `translateX(-${x}px%) translateY(-${y}px%) translateZ(-${z}px%)`;
+//     })
+// };
 
 
 
