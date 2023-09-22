@@ -1,7 +1,7 @@
 // EYES WIDE OPEN
 
 function parallax(e){
-    if (window.matchMedia("(max-width: 830px)")){
+    if (window.matchMedia("(max-width: 830px)").matches){
         document.addEventListener("deviceorientation", parallax);
         this.querySelectorAll('.layer').forEach(layer =>{
             const x = e.beta;
