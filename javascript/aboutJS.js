@@ -9,6 +9,16 @@ function parallax(e){
     })
 };
 
+document.addEventListener("deviceorientation", parallax);
+function parallax(e){
+    this.querySelectorAll('.layer').forEach(layer =>{
+        const x = e.beta;
+        const y = e.gamma;
+        const z = e.alpha;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px) translateZ(${z}px)`;
+    })
+};
+
 
 
 ScrollReveal().reveal(".logo",  {interval:300, opacity:0.2, scale: 1.2});
