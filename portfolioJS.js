@@ -5,4 +5,11 @@ document.addEventListener('mousemove', function(e){
     bottom.style.top= -75 + e.offsetY+'px';
     body.appendChild(bottom);
 });
+document.addEventListener('touchmove', function(e){
+    const body = document.querySelector('body');
+    const bottom = document.createElement('span');
+    bottom.style.left= -75 + e.offsetX+'px';
+    bottom.style.top= -75 + e.offsetY+'px';
+    body.appendChild(bottom);
+});
 
