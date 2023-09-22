@@ -15,7 +15,7 @@ function parallax(e){
         const x = e.beta;
         const y = e.gamma;
         const z = e.alpha;
-        layer.style.transform = `translateX(${x}px) translateY(${y}px) translateZ(${z}px)`;
+        layer.style.transform = `translateX(-${x}px%) translateY(-${y}px%) translateZ(-${z}px%)`;
     })
 };
 
