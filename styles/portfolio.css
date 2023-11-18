@@ -40,6 +40,7 @@ ul{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;  
+    pointer-events: all;
 }
 li, a{
     display:flex;
@@ -54,6 +55,7 @@ li, a{
 }
 .main-list:hover{
     color:rgb(196, 7, 174);
+    pointer-events: all;
 }
 main{    
     display: grid;
