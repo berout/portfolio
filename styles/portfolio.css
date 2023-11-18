@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:#EDE5D0;
+    background-size: 30px 30px;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+span{
+    width: 150px;
+    height: 150px;
+    background-image: url("../photos/IMG.jpg");
+    margin-top: 20px;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+    border-radius: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section{
+    pointer-events: none;
+}
+.top{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    background-color:#EDE5D0;
+    z-index:2;
+    justify-content: flex-end;
+    pointer-events: none;    
+}
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+}
+li, a{
+    display:flex;
+    z-index:3;
+    position: relative;
+    font: 30px bold;
+    font-family: monospace;
+    color: black;
+    text-decoration: none;
+    padding: 4px 10px;
+}
+.main-list:hover{
+    color:rgb(196, 7, 174);
+}
+main{    
+    display: grid;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+}
+#main-div{
+    height: 30%;
+    width: 100%;
+    height: fit-content;
+    z-index: 1000;
+    background-color: #ffffff;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 100px;
+    display: block;
+    padding:10px;
+   
+    
+}
+h2{
+    font-family: monospace;
+    display: block;
+    text-align: center;
+    padding-bottom:25px;
+    
+
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <meta name="author" content="magda">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="stona o kotkach">
+        <meta name="keywords" content="koty, koteczki">
+        <meta name="viewport" content="width=device-width,initial-scale=0.7,shrink-to-fit=yes">
+        <link rel="stylesheet" type="text/css" href="styles/contact.css">
+        <script src="javascript/contactJS.js" async></script>
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <ul>
+                    <li><a href="../portfolio.html" class="main-list">Home</a></li>
+                    <li><a href="html/about.html" class="main-list">About</a></li>
+                    <li><a href="html/projects.html" class="main-list">Projects</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div id="container">
+                <img src="../photos/painting.jpg" alt="painting">
+                    <div id="form" onsubmit="sendEmail(); return false;">
+                        <h2>Let's be in touch</h2>
+                        <div id="form1">
+                            <form class="">
+                                <input id="email" type="email" required>
+                                <label>Email</label>
+                            </form>
+                            <form>
+                                <input id="title" type="text" required>
+                                <label>Title</label>
+                            </form><br>
+                        </div>
+                        <form class="form2">
+                            <textarea id="message" name="message" cols="50" rows="10" required></textarea>
+                            <label>Message</label>
+                        </form>
+                        <form class="form2">
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+            </div>
+            <div id="animation">
+                <img id="woman1" src="../photos/woman2.jpg" alt="woman">
+                <img id="woman2" src="../photos/woman.jpg" alt="woman">
+            </div>
+        </main>
+    </body>
+</html>
