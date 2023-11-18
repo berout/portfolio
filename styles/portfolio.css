@@ -50,6 +50,7 @@ li, a{
     color: black;
     text-decoration: none;
     padding: 4px 10px;
+    pointer-events: all;
 }
 .main-list:hover{
     color:rgb(196, 7, 174);
