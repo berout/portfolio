@@ -9,6 +9,14 @@ body{
     overflow: hidden;
     background-blend-mode: overlay;
 }
+main{    
+    display: grid;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
 span{
     width: 150px;
     height: 150px;
@@ -56,13 +64,7 @@ li, a{
 .main-list:hover{
     color:rgb(196, 7, 174);
 }
-main{    
-    display: grid;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    width: 100vw;
-}
+
 #main-div{
     height: 30%;
     width: 100%;
