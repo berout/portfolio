@@ -14,6 +14,8 @@ window.addEventListener('deviceorientation', function(e){
     const x = e.beta;
     const y = e.gamma;
     const z = e.alpha;
-    document.getElementsByClassName('.layer').style.transform = `translateX(${x}px) translateY(${y}px) translateY(${z}px)`;
+    document.getElementsByClassName('.layer').forEach(layer =>{
+        layer.style.transform = `translateX(${x}px) translateY(${y}px) translateY(${z}px)`;
     })
+})
 
