@@ -6,3 +6,11 @@ document.addEventListener('mousemove', function(e){
     bottom.style.top= -75 + e.clientY + "px";
     main.appendChild(bottom);
 });
+document.addEventListener('touchmove', function(e){
+    const main = document.querySelector('main');
+    const bottom = document.createElement('span');
+    let touch = e.touches[0];
+    bottom.style.left= -75 + touch.clientX + "px";
+    bottom.style.top= -75 + touch.clientY + "px";
+    main.appendChild(bottom);
+});

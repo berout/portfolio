@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    
     background-color: #EDE5D0;
-    
-    
 }
 .top{
     width: 100%;
@@ -17,18 +14,15 @@ body{
     background-color: #EDE5D0;
     z-index:2;
     justify-content: flex-end;
-    
 }
 ul{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;  
-    
 }
 li{
     list-style-type:none;
 }
-
 .main-list{
     display:flex;
     z-index:3;
@@ -40,31 +34,16 @@ li{
     list-style-type:none;
     padding: 4px 10px;
 }
-
-/* li, a{
-    display:flex;
-    z-index:3;
-    position: relative;
-    font: 30px bold;
-    font-family: monospace;
-    color: black;
-    text-decoration: none;
-    padding: 4px 10px;
-} */
 .main-list:hover{
     color:rgb(196, 7, 174);
 }
-
 main{
-
     display: grid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-
 }
-
 h1{
     margin:0;
     padding: 0;
@@ -75,13 +54,8 @@ h1{
     display: flex;
     overflow: visible;
     flex-wrap: wrap;
-    overflow-wrap: normal;
-  
-   
-    
+    overflow-wrap: normal;  
 }
-
-
 #slide{
     display: flex;
     float: left;
@@ -90,30 +64,23 @@ h1{
     width: 100vw;
     position: relative;
     justify-content: center;
-
 }
 #find-out{
     position: relative;
     display: flex;
     animation: slide-left 0.9s ease-out both;
     flex-wrap: wrap;
-    
-    
-
 }
 #man img{
     width: 100%;
     height: 100%;
-	
     position: relative;
     display: flex;
 }
 #man{
-    
     width:178px;
     height: 323px;
     animation: slide-right 0.9s ease-out both;
-
 }
 
 @keyframes slide-right {
@@ -139,22 +106,15 @@ h1{
     margin:0;
     padding: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     position: relative;
     display: flex;
-    
-
+    font-weight: 900;
   }
-
-  
 }
-
 .img-box img {
     width: 100%;
-   
-     
 } 
-
 .img-box{
     position: relative;
     border-radius: 10px;
@@ -169,7 +129,6 @@ h1{
     width: 534px;
     height: 370px;
     margin-top:35px;
-    
     background-color: white;
     border-radius: 15px;
     animation: slide-top 1s ease-in-out both;
@@ -178,7 +137,6 @@ h1{
 }
 #container{
     display: flex;
-   
     margin:30px;
     gap:30px;
     flex-wrap: wrap;
@@ -186,21 +144,15 @@ h1{
     position: relative;
     justify-content: center;
     margin-top:150px;
-    
 }
 #container .card .img-box{
-
-    
     position: absolute;
     width: 469px;
     height: 275px;
-    
     transition: 0.4s;
     overflow: hidden;
-    
 }
 #container .card .img-box img{
-
     top:0;
     position: absolute;
     left:0;
@@ -216,7 +168,6 @@ h1{
         width: 407px;
     }
 }
-
 @keyframes slide-top {
     0% {
         transform: translateY(0);
@@ -228,14 +179,11 @@ h1{
   #container .card:hover{
     height:25rem;
     transition:0.5s;
-    
-    
   }
   #container .card:hover .img-box{
     top:-100px;
     scale: 0.65;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);;
-
   }
   #container .card .content{
     position: absolute;
