@@ -1,4 +1,4 @@
-// EYES WIDE OPEN
+// ALL EYES ON ME
 document.addEventListener("mousemove", parallax);
 function parallax(e){
     this.querySelectorAll('.layer').forEach(layer =>{
@@ -10,12 +10,22 @@ function parallax(e){
 };
 
 
-window.addEventListener('deviceorientation', function(e){
-    const x = e.beta;
-    const y = e.gamma;
-    const z = e.alpha;
-    document.getElementsByClassName('.layer').forEach(layer =>{
-        layer.style.transform = `translateX(${x}px) translateY(${y}px) translateY(${z}px)`;
-    })
-})
+// window.addEventListener('deviceorientation', function(e){
+//     const x = e.beta;
+//     const y = e.gamma;
+//     const z = e.alpha;
+//     document.getElementsByClassName('.layer').forEach(layer =>{
+//         layer.style.transform = `translateX(${x}px) translateY(${y}px) translateY(${z}px)`;
+//     })
+// })
 
+document.addEventListener("deviceorientation", mobileparallax);
+    function mobileparallax(e){
+        this.querySelectorAll('.layer').forEach(layer =>{
+            const speed = layer.getAttribute('data-speed');
+            const x = (window.innerWidth - e.beta * speed)/100;
+            const y = (window.innerHeight - e.gamma * speed)/100;
+            
+            layer.style.transform = `translateX(${x}px) translateY(${y}px) `;
+        })
+}
