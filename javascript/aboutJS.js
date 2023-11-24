@@ -9,19 +9,13 @@ function parallax(e){
     })
 };
 
-let sensor = new Gyroscope();
-let x, y, z;
-sensor.start()
-this.querySelectorAll('.layer').forEach(layer =>{
-    sensor.onreading = () =>{
-        x = sensor.x * 100;
-        y = sensor.y * 100;
-        z = sensor.z * -33;
-        layer.style.left = (layer.offsetLeft + x) + "px";
-        layer.style.top = (layer.offsetTop - y) + "px";
-        layer.style.bottom = (layer.offsetBottom + z) + "px";
-    }
 
-
-
+window.addEventListener('deviceorientation', function(e){
+    const x = e.beta;
+    const y = e.gamma;
+    const z = e.alpha;
+    document.querySelectorAll('.layer').forEach(layer =>{
+        layer.style.transform = `translateX(${x}px) translateY(${y}px) translateY(${z}px)`;
+    })
 })
+
